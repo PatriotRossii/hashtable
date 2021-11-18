@@ -65,4 +65,8 @@ public:
 		throw std::out_of_range{"Not found"};
 	}
 
+	bool exists(const K& key) {
+		std::size_t hash_ = hash(key);
+		return !table[hash_].empty();
+	}
 };

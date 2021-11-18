@@ -16,4 +16,6 @@ int main() {
 	std::cout << table.lookup(key) << std::endl;
 	table.remove(key);
 	std::cout << table.lookup(key + N) << std::endl;
+
+	std::cout << table.exists(key + N) << std::endl;
 }
